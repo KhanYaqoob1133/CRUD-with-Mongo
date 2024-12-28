@@ -1,0 +1,118 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f3e5f5, #e1f5fe);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #673ab7;
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    color: #555;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    background-color: #4527a0;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#dataContainer {
+    width: 90%; 
+    max-width: 800px; 
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.data-item {
+    background-color: #ffffff;
+    border: 2px solid #673ab7;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.data-item-content {
+    padding-right: 150px; 
+}
+
+
+.action-buttons {
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+
+@media (max-width: 768px) {
+    #dataContainer {
+        width: 95%; 
+    }
+
+    .data-item {
+        flex-direction: column;
+    }
+
+    .action-buttons {
+        position: static;
+        margin-top: 10px;
+        justify-content: flex-end;
+    }
+}
